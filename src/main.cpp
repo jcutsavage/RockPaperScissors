@@ -1,6 +1,15 @@
-#include <iostream>
+
+#include "rockPaperScissorsGame.h"
 
 int main() {
-    std::cout << "Hello world!" << std::endl;
+    rockPaperScissorsGame game;
+
+    game.startGame();
+
+    while(game.isGameRunning())
+    {
+        game.playNextRound();
+    }
+
     return 0;
 }
